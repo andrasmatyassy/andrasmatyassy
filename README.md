@@ -8,7 +8,13 @@ I'm Andras, a software engineer. I like automating stuff and tinkering with neur
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)
 
-A fun personal project to showcase simple neural networks and data handling: a collection of neural network models for MNIST digit classification using PyTorch.
+This project showcases the use of neural networks for classifying MNIST digits with PyTorch. It features Linear, Convolutional, and ResNet models, highlighting key aspects of data preprocessing, model training, and evaluation.
+Instead of the usual `torchvision.datasets`, the project uses `.csv` files for pixel data, offering a unique approach to data handling. Additionally, a custom dataset of 130 handwritten digits in `.png` format is included to test how well the models handle images from a different data pipeline.
+
+Key highlights:
+* Data Handling: Transforms `.csv` pixel data into PyTorch Datasets and DataLoaders.
+* Model Training: Easily configurable through a `config.yaml` file for hyperparameters and file paths.
+* Evaluation: Logs performance metrics, showing how model accuracy varies between the standard MNIST dataset and the custom dataset.
 
 [📖 Read More](https://github.com/andrasmatyassy/mnist-digit-classifier/blob/main/README.md)
 
